@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		67A7393C2C424C77006D7B8C /* BodyPoseWithMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A7393B2C424C77006D7B8C /* BodyPoseWithMVVMApp.swift */; };
-		67A7393E2C424C77006D7B8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A7393D2C424C77006D7B8C /* ContentView.swift */; };
+		67A7393E2C424C77006D7B8C /* BodyPoseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A7393D2C424C77006D7B8C /* BodyPoseView.swift */; };
 		67A739402C424C78006D7B8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67A7393F2C424C78006D7B8C /* Assets.xcassets */; };
 		67A739432C424C78006D7B8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67A739422C424C78006D7B8C /* Preview Assets.xcassets */; };
+		67A7394A2C424CA4006D7B8C /* BodyPoseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A739492C424CA4006D7B8C /* BodyPoseViewModel.swift */; };
+		67A7394C2C424CAE006D7B8C /* HumanBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A7394B2C424CAE006D7B8C /* HumanBody.swift */; };
+		67A739512C424D52006D7B8C /* BodyPoseCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A739502C424D52006D7B8C /* BodyPoseCameraController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		67A739382C424C77006D7B8C /* BodyPoseWithMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyPoseWithMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A7393B2C424C77006D7B8C /* BodyPoseWithMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPoseWithMVVMApp.swift; sourceTree = "<group>"; };
-		67A7393D2C424C77006D7B8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		67A7393D2C424C77006D7B8C /* BodyPoseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPoseView.swift; sourceTree = "<group>"; };
 		67A7393F2C424C78006D7B8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67A739422C424C78006D7B8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		67A739492C424CA4006D7B8C /* BodyPoseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPoseViewModel.swift; sourceTree = "<group>"; };
+		67A7394B2C424CAE006D7B8C /* HumanBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanBody.swift; sourceTree = "<group>"; };
+		67A739502C424D52006D7B8C /* BodyPoseCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPoseCameraController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,10 @@
 		67A7393A2C424C77006D7B8C /* BodyPoseWithMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				67A7394F2C424D35006D7B8C /* ViewModel */,
+				67A7394E2C424D2B006D7B8C /* Model */,
+				67A7394D2C424D24006D7B8C /* View */,
 				67A7393B2C424C77006D7B8C /* BodyPoseWithMVVMApp.swift */,
-				67A7393D2C424C77006D7B8C /* ContentView.swift */,
 				67A7393F2C424C78006D7B8C /* Assets.xcassets */,
 				67A739412C424C78006D7B8C /* Preview Content */,
 			);
@@ -65,6 +73,31 @@
 				67A739422C424C78006D7B8C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		67A7394D2C424D24006D7B8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67A7393D2C424C77006D7B8C /* BodyPoseView.swift */,
+				67A739502C424D52006D7B8C /* BodyPoseCameraController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67A7394E2C424D2B006D7B8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67A7394B2C424CAE006D7B8C /* HumanBody.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67A7394F2C424D35006D7B8C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				67A739492C424CA4006D7B8C /* BodyPoseViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67A7393E2C424C77006D7B8C /* ContentView.swift in Sources */,
+				67A7394A2C424CA4006D7B8C /* BodyPoseViewModel.swift in Sources */,
+				67A7393E2C424C77006D7B8C /* BodyPoseView.swift in Sources */,
+				67A739512C424D52006D7B8C /* BodyPoseCameraController.swift in Sources */,
 				67A7393C2C424C77006D7B8C /* BodyPoseWithMVVMApp.swift in Sources */,
+				67A7394C2C424CAE006D7B8C /* HumanBody.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +311,7 @@
 				DEVELOPMENT_TEAM = YA2L55RA8L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need to show body pose";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +341,7 @@
 				DEVELOPMENT_TEAM = YA2L55RA8L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need to show body pose";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
